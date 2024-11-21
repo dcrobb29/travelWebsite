@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Website</title>
+  <link rel="stylesheet" href="./travel_recommendation.css">
+</head>
+
+    
+<div id="topBar">
+   <nav><font size="10">Travel Website</font>
+    <font size="7">
+    <a href="./travel_recommendation.html" id="home" style="margin-left: 3em;">Home </a>
+    <a href="./travel_about.html" id="about" style="margin-left: .5em;">About Us </a>
+    <a href="./travel_contact.html" id="contact" style="margin-left: .5em;">Contact Us </a>
+    </font>
+
+    <input type="text" id="locationInput" placeholder="Enter a destination" style="margin-left: 2em;"> 
+    <button id='btnSearch'>Search</button>
+    <button id='btnClear'>Clear</button>
+  
+  </nav>
+</div>
+<style>
+    body{
+        text-align: center;
+    }
+    /* Some basic styling for demonstration purposes */
+    #contactForm {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    #contactForm input,
+    #contactForm textarea {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 8px;
+    }
+    #contactForm button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    #contactForm button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+<body style = "background-image: url(https://wallup.net/wp-content/uploads/2019/09/717044-cessna-airplane-aircraft-transport.jpg); background-repeat: no-repeat; background-size:cover; min-height:100%;>
+    <div class = "mainContent">
+        <br>
+        <br>
+        <br>
+        <form id="contactForm">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" onclick="thankyou()">Submit</button>
+          </form>
+          <script>
+            function thankyou(){
+                alert('Thank you for contacting us!')
+            }
+          </script>
+
+    </div>
+</body>
+<script src="./travel_recommendation.js"></script>
+</html>
